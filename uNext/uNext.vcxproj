@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutMenu.cpp" />
+    <ClCompile Include="Beetle.cpp" />
+    <ClCompile Include="Block.cpp" />
+    <ClCompile Include="BlockDebris.cpp" />
+    <ClCompile Include="Bowser.cpp" />
+    <ClCompile Include="Bubble.cpp" />
+    <ClCompile Include="BulletBill.cpp" />
+    <ClCompile Include="BulletBillSpawner.cpp" />
+    <ClCompile Include="CFG.cpp" />
+    <ClCompile Include="Cheep.cpp" />
+    <ClCompile Include="CheepSpawner.cpp" />
+    <ClCompile Include="Coin.cpp" />
+    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="Fire.cpp" />
+    <ClCompile Include="FireBall.cpp" />
+    <ClCompile Include="Flag.cpp" />
+    <ClCompile Include="Flower.cpp" />
+    <ClCompile Include="Goombas.cpp" />
+    <ClCompile Include="Hammer.cpp" />
+    <ClCompile Include="HammerBro.cpp" />
+    <ClCompile Include="IMG.cpp" />
+    <ClCompile Include="Koppa.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="Lakito.cpp" />
+    <ClCompile Include="LevelEditor.cpp" />
+    <ClCompile Include="LevelText.cpp" />
+    <ClCompile Include="LoadingMenu.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="MapLevel.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MenuManager.cpp" />
+    <ClCompile Include="MenuOption.cpp" />
+    <ClCompile Include="Minion.cpp" />
+    <ClCompile Include="Mushroom.cpp" />
+    <ClCompile Include="Music.cpp" />
+    <ClCompile Include="OptionsMenu.cpp" />
+    <ClCompile Include="PauseMenu.cpp" />
+    <ClCompile Include="Pipe.cpp" />
+    <ClCompile Include="Plant.cpp" />
+    <ClCompile Include="Platform.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerFireBall.cpp" />
+    <ClCompile Include="Points.cpp" />
+    <ClCompile Include="Spikey.cpp" />
+    <ClCompile Include="Spring.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Squid.cpp" />
+    <ClCompile Include="Star.cpp" />
+    <ClCompile Include="Text.cpp" />
+    <ClCompile Include="Toad.cpp" />
+    <ClCompile Include="UpFire.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="Vine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutMenu.h" />
+    <ClInclude Include="Beetle.h" />
+    <ClInclude Include="Block.h" />
+    <ClInclude Include="BlockDebris.h" />
+    <ClInclude Include="Bowser.h" />
+    <ClInclude Include="Bubble.h" />
+    <ClInclude Include="BulletBill.h" />
+    <ClInclude Include="BulletBillSpawner.h" />
+    <ClInclude Include="CFG.h" />
+    <ClInclude Include="Cheep.h" />
+    <ClInclude Include="CheepSpawner.h" />
+    <ClInclude Include="Coin.h" />
+    <ClInclude Include="Console.h" />
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="Fire.h" />
+    <ClInclude Include="FireBall.h" />
+    <ClInclude Include="Flag.h" />
+    <ClInclude Include="Flower.h" />
+    <ClInclude Include="Goombas.h" />
+    <ClInclude Include="Hammer.h" />
+    <ClInclude Include="HammerBro.h" />
+    <ClInclude Include="header.h" />
+    <ClInclude Include="IMG.h" />
+    <ClInclude Include="Koppa.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="Lakito.h" />
+    <ClInclude Include="LevelEditor.h" />
+    <ClInclude Include="LevelText.h" />
+    <ClInclude Include="LoadingMenu.h" />
+    <ClInclude Include="MainMenu.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="MapLevel.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MenuManager.h" />
+    <ClInclude Include="MenuOption.h" />
+    <ClInclude Include="Minion.h" />
+    <ClInclude Include="Mushroom.h" />
+    <ClInclude Include="Music.h" />
+    <ClInclude Include="OptionsMenu.h" />
+    <ClInclude Include="PauseMenu.h" />
+    <ClInclude Include="Pipe.h" />
+    <ClInclude Include="Plant.h" />
+    <ClInclude Include="Platform.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerFireBall.h" />
+    <ClInclude Include="Points.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Spikey.h" />
+    <ClInclude Include="Spring.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Squid.h" />
+    <ClInclude Include="Star.h" />
+    <ClInclude Include="Text.h" />
+    <ClInclude Include="Toad.h" />
+    <ClInclude Include="UpFire.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="Vine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="uNext.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\app.ico" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DE7E650D-BC2A-405B-982E-D3B030DE4814}</ProjectGuid>
+    <RootNamespace>uNext</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2-2.0.3\include;C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2_image-2.0.0\include;C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2_mixer-2.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2-2.0.3\lib\x86;C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2_image-2.0.0\lib\x86;C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2_mixer-2.0.0\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2-2.0.3\include;C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2_mixer-2.0.0\include;C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2_image-2.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2-2.0.3\lib\x86;C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2_mixer-2.0.0\lib\x86;C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2_image-2.0.0\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_mixer.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

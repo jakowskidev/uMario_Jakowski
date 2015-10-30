@@ -1,0 +1,69 @@
+﻿Build started 2015-01-21 11:25:07.
+     1>Project "C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\uNext\uNext\uNext.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2-2.0.3\include" /I"C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2_image-2.0.0\include" /I"C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2_mixer-2.0.0\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Map.cpp
+         Map.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\uNext\Debug\uNext.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2-2.0.3\lib\x86" /LIBPATH:"C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2_image-2.0.0\lib\x86" /LIBPATH:"C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\libs\SDL2_mixer-2.0.0\lib\x86" SDL2.lib SDL2main.lib SDL2_image.lib SDL2_mixer.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\uNext\Debug\uNext.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\uNext\Debug\uNext.lib" /MACHINE:X86 Debug\uNext.res
+         Debug\AboutMenu.obj
+         Debug\Beetle.obj
+         Debug\Block.obj
+         Debug\BlockDebris.obj
+         Debug\Bowser.obj
+         Debug\Bubble.obj
+         Debug\BulletBill.obj
+         Debug\BulletBillSpawner.obj
+         Debug\CFG.obj
+         Debug\Cheep.obj
+         Debug\CheepSpawner.obj
+         Debug\Coin.obj
+         Debug\Console.obj
+         Debug\Core.obj
+         Debug\Fire.obj
+         Debug\FireBall.obj
+         Debug\Flag.obj
+         Debug\Flower.obj
+         Debug\Goombas.obj
+         Debug\Hammer.obj
+         Debug\HammerBro.obj
+         Debug\IMG.obj
+         Debug\Koppa.obj
+         Debug\Event.obj
+         Debug\Lakito.obj
+         Debug\LevelEditor.obj
+         Debug\LevelText.obj
+         Debug\LoadingMenu.obj
+         Debug\main.obj
+         Debug\MainMenu.obj
+         Debug\Map.obj
+         Debug\MapLevel.obj
+         Debug\Menu.obj
+         Debug\MenuManager.obj
+         Debug\MenuOption.obj
+         Debug\Minion.obj
+         Debug\Mushroom.obj
+         Debug\Music.obj
+         Debug\OptionsMenu.obj
+         Debug\PauseMenu.obj
+         Debug\Pipe.obj
+         Debug\Plant.obj
+         Debug\Platform.obj
+         Debug\Player.obj
+         Debug\PlayerFireBall.obj
+         Debug\Points.obj
+         Debug\Spikey.obj
+         Debug\Spring.obj
+         Debug\Sprite.obj
+         Debug\Squid.obj
+         Debug\Star.obj
+         Debug\Text.obj
+         Debug\Toad.obj
+         Debug\UpFire.obj
+         Debug\Vector2.obj
+         Debug\Vine.obj
+         uNext.vcxproj -> C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\uNext\Debug\uNext.exe
+     1>Done Building Project "C:\Users\jakowskiuki\Documents\Visual Studio 2012\Projects\uNext\uNext\uNext.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.20
