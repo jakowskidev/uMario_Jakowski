@@ -2,7 +2,9 @@
 uMario C++/SDL2 Game by Łykasz Jakowski
 
 Author: Łukasz Jakowski
+
 WWW: http://lukaszjakowski.pl
+
 Email: jakowskidev@gmail.com
 
 It is my first and last game made in C++.
