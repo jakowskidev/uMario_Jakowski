@@ -4,8 +4,11 @@ uMario C++/SDL2 Game by Łukasz Jakowski
 Author: Łukasz Jakowski
 
 WWW: http://lukaszjakowski.pl
-
 Email: jakowskidev@gmail.com
+
+EXE Download: http://lukaszjakowski.pl/DL/uMario.zip
+
+YouTube video: https://www.youtube.com/watch?v=jya5He7KFsE
 
 
 It is my first and last game made in C++.
