@@ -6,7 +6,7 @@ Author: Łukasz Jakowski
 WWW: http://lukaszjakowski.pl
 Email: jakowskidev@gmail.com
 
-EXE Download: http://lukaszjakowski.pl/DL/uMario.zip
+EXE and DLL - Download: http://lukaszjakowski.pl/DL/uMario.zip
 
 YouTube video: https://www.youtube.com/watch?v=jya5He7KFsE
 
