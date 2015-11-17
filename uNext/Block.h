@@ -31,7 +31,7 @@ public:
 	int getBlockID();
 	void setBlockID(int iID);
 
-	Sprite* Block::getSprite();
+	Sprite* getSprite();
 	bool getCollision();
 	bool getDeath();
 	bool getUse();
