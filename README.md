@@ -19,3 +19,25 @@ http://lazyfoo.net/tutorials/SDL/index.php
 
 
 My Google Play account: https://play.google.com/store/apps/dev?id=4635849298843013993
+
+
+## Build Pre-requisites
+
+FreeBSD:
+
+    $ pkg install cmake sdl2 sdl2_image sdl2_mixer
+
+OS X (brew):
+
+    $ brew install cmake sdl2 sdl2_image sdl2_mixer
+
+## Building and running
+
+    $ make build run
+
+    # or
+
+    $ mkdir build
+    $ cmake ..
+    $ make
+    $ ./uMario
