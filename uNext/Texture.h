@@ -1,11 +1,13 @@
 #pragma once
 
 #include <string>
+#include <SDL.h>
+#include <SDL_image.h>
 
 class Texture
 {
 public:
-	Texture(string fileName);
+	Texture(std::string fileName);
 	~Texture(void);
 
 	void Draw();
