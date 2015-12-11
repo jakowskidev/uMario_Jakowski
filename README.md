@@ -38,6 +38,7 @@ OS X (brew):
     # or
 
     $ mkdir build
+    $ cd build
     $ cmake ..
     $ make
     $ ./uMario
