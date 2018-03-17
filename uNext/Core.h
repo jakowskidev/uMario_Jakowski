@@ -4,6 +4,7 @@
 #define CORE_H
 
 #include "Map.h"
+#include "Gamepad.h"
 
 class CCore
 {
@@ -11,6 +12,8 @@ private:
 	SDL_Window* window;
 	SDL_Renderer* rR;
 	SDL_Event* mainEvent;
+	bool Fullscreen;
+	bool ControllerEnabled;
 
 	// ----- FPS -----
 
@@ -30,11 +33,13 @@ private:
 	bool firstDir;
 
 	// ----- INPUT
-
+	
 	static Map* oMap;
-
+	GameController oController;
+	
 	// ----- Methods
 
+	void ManageController();
 	void Input();
 	void MouseInput();
 	void InputPlayer();
@@ -49,6 +54,9 @@ public:
 
 	void Update();
 	void Draw();
+
+	void ProcessFSKey(bool FS);
+	void SetFS();
 
 	void resetMove();
 	static void resetKeys();
