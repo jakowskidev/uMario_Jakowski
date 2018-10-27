@@ -80,13 +80,13 @@ void AboutMenu::Update() {
 
 void AboutMenu::Draw(SDL_Renderer* rR) {
 	CCFG::getText()->DrawWS(rR, "MARIO V 1.03 - C++ AND SDL2", 150, 128, 0, 0, 0);
-	CCFG::getText()->DrawWS(rR, "AUTOR: Srihari Kapu", 150, 146, 0, 0, 0);
+	CCFG::getText()->DrawWS(rR, "AUTOR: SRIHARI KAPU", 150, 146, 0, 0, 0);
 
 	CCFG::getText()->DrawWS(rR, "2018", 150, 188, 0, 0, 0);
-	CCFG::getText()->DrawWS(rR, "Developed Under Creative Commons Public Licence", 150, 206, 0, 0, 0);
+	CCFG::getText()->DrawWS(rR, "CREATIVE COMMONS", 150, 206, 0, 0, 0);
 	CCFG::getText()->DrawWS(rR, "Nov 2018", 150, 224, 0, 0, 0);
 
-	CCFG::getText()->DrawWS(rR, "www.sriharikapu.com", 150, 264, 0, 0, 0);
+	CCFG::getText()->DrawWS(rR, "WWW.SRIHARIKAPU.COM", 150, 264, 0, 0, 0);
 
 	//CCFG::getText()->DrawWS(rR, std::to_string(iNumOfUnits), 5, CCFG::GAME_HEIGHT - 21, 0, 0, 0);
 
