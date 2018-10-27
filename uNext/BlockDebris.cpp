@@ -12,7 +12,7 @@ BlockDebris::BlockDebris(int iXPos, int iYPos) {
 	this->vPositionR = new Vector2(iXPos + 16, iYPos);
 	this->vPositionL2 = new Vector2(iXPos, iYPos + 16);
 	this->vPositionR2 = new Vector2(iXPos + 16, iYPos + 16);
-
+//this->fspeedX=2.15f;
 	this->fSpeedX = 2.15f;
 	this->fSpeedY = 1;
 }

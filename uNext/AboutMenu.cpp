@@ -48,7 +48,7 @@ void AboutMenu::Update() {
 		}
 
 		CCore::getMap()->setLevelType(rand()%4);
-		
+
 		if(rand()%10 < 6) {
 			CCore::getMap()->addGoombas(-(int)CCore::getMap()->getXPos() + rand() % (CCFG::GAME_WIDTH + 128), -32, rand()%2 == 0);
 			CCore::getMap()->addGoombas(-(int)CCore::getMap()->getXPos() + rand() % (CCFG::GAME_WIDTH + 128), -32, rand()%2 == 0);
@@ -67,7 +67,7 @@ void AboutMenu::Update() {
 
 		iTime = SDL_GetTicks();
 	}
-	
+
 	if(moveDirection && CCFG::GAME_WIDTH - CCore::getMap()->getXPos() >= (CCore::getMap()->getMapWidth() - 20) * 32) {
 		moveDirection = !moveDirection;
 	} else if(!moveDirection && -CCore::getMap()->getXPos() <= 0) {
@@ -80,13 +80,13 @@ void AboutMenu::Update() {
 
 void AboutMenu::Draw(SDL_Renderer* rR) {
 	CCFG::getText()->DrawWS(rR, "MARIO V 1.03 - C++ AND SDL2", 150, 128, 0, 0, 0);
-	CCFG::getText()->DrawWS(rR, "AUTOR: LUKASZ JAKOWSKI", 150, 146, 0, 0, 0);
+	CCFG::getText()->DrawWS(rR, "AUTOR: Srihari Kapu", 150, 146, 0, 0, 0);
 
-	CCFG::getText()->DrawWS(rR, "INFORMATYKA INZ 2012-2016", 150, 188, 0, 0, 0);
-	CCFG::getText()->DrawWS(rR, "UNIWERSYTET SLASKI W KATOWICACH", 150, 206, 0, 0, 0);
-	CCFG::getText()->DrawWS(rR, "MAJ 2014", 150, 224, 0, 0, 0);
+	CCFG::getText()->DrawWS(rR, "2018", 150, 188, 0, 0, 0);
+	CCFG::getText()->DrawWS(rR, "Developed Under Creative Commons Public Licence", 150, 206, 0, 0, 0);
+	CCFG::getText()->DrawWS(rR, "Nov 2018", 150, 224, 0, 0, 0);
 
-	CCFG::getText()->DrawWS(rR, "WWW.LUKASZJAKOWSKI.PL", 150, 264, 0, 0, 0);
+	CCFG::getText()->DrawWS(rR, "www.sriharikapu.com", 150, 264, 0, 0, 0);
 
 	//CCFG::getText()->DrawWS(rR, std::to_string(iNumOfUnits), 5, CCFG::GAME_HEIGHT - 21, 0, 0, 0);
 
