@@ -558,7 +558,14 @@ int Map::checkCollisionWithPlatform(int nX, int nY, int iHitBoxX, int iHitBoxY) 
 }
 
 bool Map::checkCollision(Vector2* nV, bool checkVisible) {
-	bool output = vBlock[lMap[nV->getX()][nV->getY()]->getBlockID()]->getCollision() && (checkVisible ? vBlock[lMap[nV->getX()][nV->getY()]->getBlockID()]->getVisible() : true);
+	int x = nV->getX();
+	int lMapSize = lMap.size();
+	
+	if(lMapSize  <= x  ){
+		x = lMapSize -1;
+	}
+	
+	bool output = vBlock[lMap[x][nV->getY()]->getBlockID()]->getCollision() && (checkVisible ? vBlock[lMap[x][nV->getY()]->getBlockID()]->getVisible() : true);
 	delete nV;
 	return output;
 }
