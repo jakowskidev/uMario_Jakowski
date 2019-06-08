@@ -29,7 +29,7 @@ void Goombas::Update() {
 
 void Goombas::Draw(SDL_Renderer* rR, CIMG* iIMG) {
 	if(minionState != -2) {
-		iIMG->Draw(rR, (int)fXPos + (int)CCore::getMap()->getXPos(), (int)fYPos + 2, false);
+		iIMG->Draw(rR, (int)fXPos + (int)CCore::getMap()->getXPos(), (int)fYPos + 2, !moveDirection);
 	} else {
 		iIMG->DrawVert(rR, (int)fXPos + (int)CCore::getMap()->getXPos(), (int)fYPos + 2);
 	}
