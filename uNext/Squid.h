@@ -20,6 +20,7 @@ public:
 	void collisionWithPlayer(bool TOP);
 
 	void changeBlockID();
+	void setMinionState(int);
 };
 
 #endif
