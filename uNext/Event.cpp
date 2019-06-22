@@ -346,7 +346,7 @@ void Event::newLevel() {
 		CCFG::getMM()->getLoadingMenu()->updateTime();
 		CCFG::getMM()->getLoadingMenu()->loadingType = true;
 		CCFG::getMM()->setViewID(CCFG::getMM()->eGameLoading);
-		CCore::getMap()->getPlayer()->setCoins(0);
+		//CCore::getMap()->getPlayer()->setCoins(0);
 	}
 	CCore::getMap()->setCurrentLevelID(newCurrentLevel);
 	CCore::getMap()->setLevelType(newLevelType);
