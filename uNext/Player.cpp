@@ -366,6 +366,14 @@ void Player::Update() {
 			--nextFireBallFrameID;
 		}
 	}
+	
+		if (getCoins() > 99 ){
+			setNumOfLives(getNumOfLives() + 1);
+			CCore::getMap()->addPoints((int)(fXPos - CCore::getMap()->getXPos() + getHitBoxX() / 2), (int)fYPos + 16, "1UP", 10, 14);
+			CCFG::getMusic()->PlayChunk(CCFG::getMusic()->cONEUP);
+			setCoins(0);
+
+		}	
 
 	if(inLevelDownAnimation) {
 		if(inLevelDownAnimationFrameID > 0) {
