@@ -14,7 +14,7 @@ private:
 	SDL_Rect rSelectWorld;
 public:
 	MainMenu(void);
-	~MainMenu(void);
+	virtual ~MainMenu(void);
 
 	void Update();
 	void Draw(SDL_Renderer* rR);

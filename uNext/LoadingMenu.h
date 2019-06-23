@@ -11,7 +11,7 @@ private:
 	unsigned int iTime;
 public:
 	LoadingMenu(void);
-	~LoadingMenu(void);
+	virtual ~LoadingMenu(void);
 
 	void Update();
 	void Draw(SDL_Renderer* rR);
