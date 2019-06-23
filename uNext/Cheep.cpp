@@ -38,7 +38,7 @@ Cheep::Cheep(int iXPos, int iYPos, int minionType, int moveSpeed, bool moveDirec
 		moveYDIR = true;
 	}
 	
-	this->collisionOnlyWithPlayer = true;
+	this->collisionOnlyWithPlayer = false;
 }
 
 Cheep::~Cheep(void) {
@@ -48,6 +48,9 @@ Cheep::~Cheep(void) {
 /* ******************************************** */
 
 void Cheep::Update() {
+	if(minionState != -2){
+
+
 	if(minionState == 0 || minionState == 1) {
 		if(fXPos + iHitBoxX < 0) {
 			minionState = -1;
@@ -151,6 +154,14 @@ void Cheep::Update() {
 			}
 		}
 	}
+	}
+	else
+	{
+		//moveYDIR = false;
+		//this->jumpDistance = CCFG::GAME_HEIGHT - fYPos;
+		Minion::minionDeathAnimation();
+
+	}
 }
 
 void Cheep::Draw(SDL_Renderer* rR, CIMG* iIMG) {
@@ -166,6 +177,11 @@ void Cheep::Draw(SDL_Renderer* rR, CIMG* iIMG) {
 void Cheep::minionPhysics() { }
 
 void Cheep::collisionWithPlayer(bool TOP) {
+	if(CCore::getMap()->getPlayer()->getStarEffect()) {
+
+		setMinionState(-2);
+	}
+
 	if(minionState > 1 && TOP) {
 		setMinionState(-2);
 		this->minionState = -2;

@@ -20,7 +20,7 @@ Squid::Squid(int iXPos, int iYPos) {
 	this->moveXDistance = 96;
 	this->moveYDistance = 32;
 
-	this->collisionOnlyWithPlayer = true;
+	this->collisionOnlyWithPlayer = false;
 
 	srand((unsigned)time(NULL));
 }
@@ -33,6 +33,7 @@ Squid::~Squid(void) {
 
 void Squid::Update() {
 	if(CCore::getMap()->getUnderWater()) {
+		if(minionState != -2){
 		if(moveXDistance <= 0) {
 			if(moveYDistance > 0) {
 				fYPos += 1;
@@ -61,12 +62,26 @@ void Squid::Update() {
 				changeBlockID();
 				moveYDistance = 32;
 			}
+
+
+			}
+		}
+		else {
+			Minion::minionDeathAnimation();
 		}
 	}
 }
 
 void Squid::Draw(SDL_Renderer* rR, CIMG* iIMG) {
-	iIMG->Draw(rR,(int)(fXPos + CCore::getMap()->getXPos()), (int)fYPos);
+	if(minionState != -2)
+	{
+		iIMG->Draw(rR,(int)(fXPos + CCore::getMap()->getXPos()), (int)fYPos);
+
+	}
+	else
+	{
+		iIMG->DrawVert(rR, (int)fXPos + (int)CCore::getMap()->getXPos(), (int)fYPos + 2);
+	}
 }
 
 void Squid::minionPhysics() { }
@@ -74,6 +89,12 @@ void Squid::minionPhysics() { }
 /* ******************************************** */
 
 void Squid::collisionWithPlayer(bool TOP) {
+
+	if(CCore::getMap()->getPlayer()->getStarEffect()) {
+
+		setMinionState(-2);
+	}
+
 	CCore::getMap()->playerDeath(true, false);
 }
 
@@ -88,4 +109,14 @@ void Squid::changeBlockID() {
 			this->iHitBoxY = 28;
 			break;
 	}
+}
+
+void Squid::setMinionState(int minionState) {
+	this->minionState = minionState;
+
+	if (this->minionState == 1) {
+		deadTime = SDL_GetTicks();
+	}
+
+	Minion::setMinionState(minionState);
 }

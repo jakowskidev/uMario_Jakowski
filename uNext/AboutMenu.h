@@ -19,7 +19,7 @@ private:
 	int iNumOfUnits;
 public:
 	AboutMenu(void);
-	~AboutMenu(void);
+	virtual ~AboutMenu(void);
 
 	void Update();
 	void Draw(SDL_Renderer* rR);
