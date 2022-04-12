@@ -2,6 +2,10 @@
 #include "Core.h"
 #include <math.h>
 
+#if defined(_WIN32) || defined(WIN32) 
+#include <corecrt_math_defines.h>
+#endif
+
 /* ******************************************** */
 
 FireBall::FireBall(int iXPos, int iYPos, int radius, int nSliceID, bool moveDirection) {
