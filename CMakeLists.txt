@@ -18,18 +18,26 @@ elseif (${CMAKE_CXX_COMPILER_ID} STREQUAL "MSVC")
 	endif()
 endif()
 
-find_package(SDL2 REQUIRED)
-find_package(SDL2_Image REQUIRED)
-find_package(SDL2_Mixer REQUIRED)
+if( ${CMAKE_SYSTEM_NAME} MATCHES "Emscripten")
+    set(USE_FLAGS "-s TOTAL_MEMORY=1000MB -s USE_SDL=2 -s USE_SDL_IMAGE=2 -s USE_SDL_MIXER=2 --use-preload-plugins -s SDL2_IMAGE_FORMATS='[\"bmp\"]' --preload-file files@/files/")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${USE_FLAGS}")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${USE_FLAGS}")
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${USE_FLAGS}")
+    set(CMAKE_EXECUTABLE_SUFFIX .html)
+	file(COPY uNext/files/sounds DESTINATION "files/.")
+	file(COPY uNext/files/images/mario DESTINATION "files/images/.")
+	file(COPY uNext/files/images DESTINATION "files/." FILES_MATCHING REGEX "files/images/[^0-9].+\\.bmp")
+else()
+	find_package(SDL2 REQUIRED)
+	find_package(SDL2_Image REQUIRED)
+	find_package(SDL2_Mixer REQUIRED)
+	file(COPY uNext/files DESTINATION .)
+endif()
+
 include_directories(${SDL2_INCLUDE_DIR} ${SDL2_IMAGE_INCLUDE_DIR} ${SDL2_MIXER_INCLUDE_DIR})
-
-file(COPY uNext/files DESTINATION .)
-
 include_directories(uNext)
-
 file(GLOB_RECURSE uMario_SOURCES "uNext/*.cpp")
 add_executable (uMario ${uMario_SOURCES})
-
 target_link_libraries(uMario ${SDL2_LIBRARY} ${SDL2_IMAGE_LIBRARY} ${SDL2_MIXER_LIBRARY})
 
 install(TARGETS uMario RUNTIME DESTINATION ${BIN_DIR})

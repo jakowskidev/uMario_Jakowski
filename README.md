@@ -25,11 +25,11 @@ My Google Play account: https://play.google.com/store/apps/dev?id=46358492988430
 
 FreeBSD:
 
-    $ pkg install cmake sdl2 sdl2_image sdl2_mixer
+    $ pkg install cmake sdl2 sdl2_image sdl2_mixer emscripten
 
 OS X (brew):
 
-    $ brew install cmake sdl2 sdl2_image sdl2_mixer
+    $ brew install cmake sdl2 sdl2_image sdl2_mixer emscripten
 
 ## Building and running
 
@@ -42,3 +42,10 @@ OS X (brew):
     $ cmake ..
     $ make
     $ ./uMario
+
+## Building for web
+
+    $ mkdir build
+    $ cd build
+    $ emcmake cmake ..
+    $ make
