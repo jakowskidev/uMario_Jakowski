@@ -14,7 +14,9 @@ PauseMenu::PauseMenu(void) {
 	this->lMO.push_back(new MenuOption("OPTIONS", 0, 180));
 
 	this->lMO.push_back(new MenuOption("QUIT TO MENU", 0, 228));
+#ifndef __EMSCRIPTEN__
 	this->lMO.push_back(new MenuOption("QUIT TO DESKTOP", 0, 252));
+#endif
 
 	this->numOfMenuOptions = lMO.size();
 }

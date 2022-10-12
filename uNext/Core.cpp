@@ -4,6 +4,9 @@
 #include "CFG.h"
 #include "Text.h"
 #include "SDL_mixer.h"
+#ifdef __EMSCRIPTEN__
+#include "emscripten.h"
+#endif
 
 /* ******************************************** */
 
@@ -73,6 +76,9 @@ CCore::CCore(void) {
 }
 
 CCore::~CCore(void) {
+#ifdef __EMSCRIPTEN__
+    emscripten_cancel_main_loop();
+#endif
 	delete oMap;
 	delete mainEvent;
 	SDL_DestroyRenderer(rR);
@@ -82,10 +88,12 @@ CCore::~CCore(void) {
 /* ******************************************** */
 
 void CCore::mainLoop() {
+#ifndef __EMSCRIPTEN__
 	lFPSTime = SDL_GetTicks();
 
 	while(!quitGame && mainEvent->type != SDL_QUIT) {
 		frameTime = SDL_GetTicks();
+#endif
 		SDL_PollEvent(mainEvent);
 		SDL_RenderClear(rR);
 
@@ -108,11 +116,14 @@ void CCore::mainLoop() {
 		++iFPS;*/
 
 		SDL_RenderPresent(rR);
-		
+#ifndef __EMSCRIPTEN__		
 		if(SDL_GetTicks() - frameTime < MIN_FRAME_TIME) {
 			SDL_Delay(MIN_FRAME_TIME - (SDL_GetTicks () - frameTime));
 		}
 	}
+#else
+	//emscripten_sleep(10);
+#endif
 }
 
 void CCore::Input() {

@@ -20,16 +20,18 @@ http://lazyfoo.net/tutorials/SDL/index.php
 
 My Google Play account: https://play.google.com/store/apps/dev?id=4635849298843013993
 
+Web port demo: https://ferdinandsilva.com/umario
+
 
 ## Build Pre-requisites
 
 FreeBSD:
 
-    $ pkg install cmake sdl2 sdl2_image sdl2_mixer
+    $ pkg install cmake sdl2 sdl2_image sdl2_mixer emscripten
 
 OS X (brew):
 
-    $ brew install cmake sdl2 sdl2_image sdl2_mixer
+    $ brew install cmake sdl2 sdl2_image sdl2_mixer emscripten
 
 ## Building and running
 
@@ -42,3 +44,10 @@ OS X (brew):
     $ cmake ..
     $ make
     $ ./uMario
+
+## Building for web
+
+    $ mkdir build
+    $ cd build
+    $ emcmake cmake ..
+    $ make
